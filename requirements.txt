@@ -1,8 +1,9 @@
 fastapi
-unicorn
+uvicorn
 jinja2
 python-multipart
 pydantic-settings
+
 langgraph
 langchain-core
 langchain-community
@@ -10,8 +11,10 @@ langchain-openai
 langchain-tavily
 langchain-pinecone
 langchain-text-splitters
+
 pinecone
 openai
+
 pypdf
 python-docx
 python-dotenv
