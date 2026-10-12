@@ -6,16 +6,21 @@
 # print(f"App Environment: {settings.app_env}")
 
 
-from app.services.ingestion import load_file, chunk_documents
+# from app.services.ingestion import load_file, chunk_documents
 
-from pathlib import Path
-from app.rag.vectorstore import add_documents
+# from pathlib import Path
+# from app.rag.vectorstore import add_documents
 
-docs = load_file(Path("data/sample_kb/company_it_handbook.md"))
+# docs = load_file(Path("data/sample_kb/company_it_handbook.md"))
 
-chucks = chunk_documents(docs)
+# chucks = chunk_documents(docs)
 
-add_documents(chunks)
+# add_documents(chunks)
 
-print(f"Loaded and chunked {len(docs)} documents.")
+# print(f"Loaded and chunked {len(docs)} documents.")
 
+
+import uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)

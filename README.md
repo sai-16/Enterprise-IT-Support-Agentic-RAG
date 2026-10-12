@@ -251,19 +251,20 @@ FDE_Agentic_RAG_IT_Copilot/
 ### Step 1 — Create virtual environment
 
 ```bash
-python -m venv venv
+py -3.12 -m venv .venv
 ```
 
 Windows:
 
 ```bash
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 macOS/Linux:
 
 ```bash
-source venv/bin/activate
+python3.12 -m venv .venv
+source .venv/bin/activate
 ```
 
 ### Step 2 — Install dependencies
